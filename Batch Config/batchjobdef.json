@@ -1,0 +1,13 @@
+{
+  "jobDefinitionName": "image-processing-job-definition",
+  "type": "container",
+  "containerProperties": {
+    "image": "051310222119.dkr.ecr.us-east-1.amazonaws.com/image_processing:latest",
+    "vcpus": 8,
+    "memory": 16384,
+    "command": ["python", "process_images.py"]
+  },
+  "retryStrategy": {
+    "attempts": 1
+  }
+}

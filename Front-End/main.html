@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Faserely</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css?v2" />
+    <link rel="icon" href="images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="center">
+        <a href="./">
+          <img src="images/logo.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <div class="video-container">
+        <video controls autoplay muted playsinline>
+          <source src="videos/main.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="terms-container">
+        <button type="button" id="nextButton">التالي</button>
+        <label class="custom-checkbox">
+          أوافق على <a href="terms.html">الشروط والأحكام</a>
+          <input type="checkbox" id="termsCheckbox" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

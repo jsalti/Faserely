@@ -1,0 +1,195 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #4298f7, #0f66e8);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header .left,
+.header .right,
+.header .center {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+    height: 75px;
+    transition: 0.3s;
+  }
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+h1,
+p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.content-container {
+  margin-top: 30px;
+}
+
+.video-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.terms-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.terms-container a {
+  display: block;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-right: 55px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 14px;
+  top: 8px;
+  width: 9px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nextButton {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+}
+
+#nextButton.button-checked {
+  background-color: #4caf50;
+}
+
+#nextButton.button-checked:hover {
+  background-color: #327335;
+}
+
+#nextButton.button-unchecked {
+  background-color: #ccc;
+}
+
+#nextButton.button-unchecked:hover {
+  background-color: #7a7a7a;
+}
+
+.swal2-icon.swal2-warning {
+  border-color: red;
+  color: red;
+}
+
+.custom-ok-button {
+  font-size: 20px !important;
+  padding: 10px 15px !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  background-color: #4caf50 !important;
+  color: #ffffff !important;
+}
+
+.custom-ok-button:hover {
+  background-color: #275829;
+}
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    max-width: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    max-width: 75px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    max-width: 90px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    max-width: 100px;
+  }
+}

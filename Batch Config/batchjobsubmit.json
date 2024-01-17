@@ -1,0 +1,12 @@
+{
+  "jobName": "image-processing-job",
+  "jobQueue": "arsl-jobqueue",
+  "jobDefinition": "image-processing-job-definition",
+  "containerOverrides": {
+    "command": ["python", "process_images.py"],
+    "environment": [
+      { "name": "arslreadytoprocess", "value": "arslreadytoprocess" },
+      { "name": "arslprocessed", "value": "arslprocessed" }
+    ]
+  }
+}
