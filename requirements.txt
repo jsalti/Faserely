@@ -1,0 +1,4 @@
+opencv-python
+mediapipe-model-maker
+matplotlib
+pandas
